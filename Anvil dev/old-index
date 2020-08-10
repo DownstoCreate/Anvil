@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Anvil</title>
+
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid title-container">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#">
+          <img class="anvil-logo" src="anvil@2x.png" alt="Anvil Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#services">SERVICES</a>
+            <a class="nav-item nav-link" href="#">ABOUT</a>
+            <a class="nav-item nav-link" href="#">CONTACT</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Title  -->
+
+      <div class="title-image">
+        <div class="intro-text white-background">
+          <div class="background-rectangle">
+
+          </div>
+
+          <h3 class="title-text"><b>Anvil</b> is a software development and consulting firm located in Huntsville Alabama.
+            We love to build software and create solutions for complex data driven problems. We love what we do and we love helping our clients ! </h3>
+
+
+
+        </div>
+        <img class="title-img" src="people working.jpg" alt="people">
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+  <!-- Services -->
+
+  <section id="services">
+    <div class="container-fluid blue-background service-container">
+      <h1 class="service-title">Our Services</h1>
+      <p class="service-p"><b>Anvil</b> is your preferred IT vendor to help manage your resources, whether it is software, projects, infrastructure or people. </p>
+      <div class="row">
+        <div class="col-lg-4 col-md-12 service-id">
+          <img class="service-image" src="consulting.svg" alt="consulting">
+          <div class="box">
+            <h2>Consulting</h2>
+            <p>Project Advisory, Strategic Assessment</p>
+          </div>
+        </div>
+        <div class="col-lg-4 service-id">
+          <img class="service-image" src="software-dev.svg" alt="software-dev">
+          <h2>Software Development</h2>
+          <p>Team Augmentation, Standalone Project, Data Integration</p>
+        </div>
+        <div class="col-lg-4 service-id">
+          <img class="service-image" src="IT.svg" alt="IT">
+          <h2>IT Management</h2>
+          <p>Project Strategy, Talent Management, Vendor Management </p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+CSS
+/* Colors */
+/* blue - #00A295 */
+/* grey - #616161 */
+
+
+h1{
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+
+/* classes */
+
+/* overarching */
+.white-background{
+  background-color: #000;
+  font-family: 'Montserra', sans-serif;
+  color: #616161;
+}
+
+
+.blue-background{
+  background-color: #00A295;
+  font-family: 'Montserra', sans-serif;
+  color: #fff;
+}
+
+
+.container-fluid{
+  padding: 1% 15%;
+}
+
+/* Nav Bar */
+.anvil-logo {
+  width: 20%;
+
+}
+.navbar-brand{
+  margin-left: 0;
+}
+
+.navbar-nav {
+  text-align: right;
+}
+
+
+.nav-item {
+  margin: 0 2%;
+}
+.navbar{
+  margin-bottom: 3%;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+
+/* Title */
+.title-img {
+  width: 100%;
+
+}
+
+.title-image {
+  text-align: center;
+  position: relative;
+  z-index: -1;
+
+}
+.title-text{
+  position: absolute;
+  z-index: 1;
+  text-align: left;
+  margin: 2% 5%;
+  color: #00A295;
+}
+
+.background-rectangle{
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background-color: white;
+  opacity: 60%;
+}
+
+@media screen and (max-width: 1366px) {
+  .title-text{
+      position: static;
+    }
+  .background-rectangle{
+    width: 0;
+  }
+}
+
+
+
+/* Services */
+
+.service-container{
+  text-align: center;
+
+}
+.service-title{
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+.service-p{
+  padding-bottom: 3%;
+}
+
+.service-image{
+  margin-bottom: 10%;
+  margin-top: 5%;
+
+}
+
+
+
+
+
+
+************************************************************************LAST FINAL DRAFT HTML****************************************************************************
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Anvil</title>
+
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+  <section id="title">
+    <div class="container-fluid titleCon">
+
+
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="anvil@2x.png" width="100" height="20" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#our-services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Why-Us">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+
+      <div class="title-header">
+        <h3 class="title-text"><b>Anvil</b> is a software development and consulting firm located in Huntsville, Alabama.
+          We love to build software and create solutions for complex data driven problems. We love what we do and we love helping our clients! </h3>
+
+      </div>
+
+
+
+
+
+  </section>
+
+
+
+
+
+  <section id="our-services">
+    <div class="container-fluid">
+      <h2 class="service-h2">Our Services</h2>
+      <p class="service-p">Anvil is your preferred IT vendor to help manage your resources, whether it is software, projects, infrastructure or people. </p>
+      <div class="row">
+        <div class="col-lg-4 service-col">
+          <div class="services service-extend">
+            <img class="service-image service-image-consulting" src="consulting.svg" alt="consulting">
+            <h3 class="services-h3 ">Consulting</h3>
+            <p class="service-image-p service-extend-p">Project Advisory, Strategic Assessment</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 service-col">
+          <div class="services">
+            <img class="service-image" src="software-dev.svg" alt="software-dev">
+            <h3 class="services-h3">Software Development</h3>
+            <p>Team Augmentation, Standalone Project, Data Integration</p>
+          </div>
+        </div>
+        <div class="col-lg-4 service-col">
+          <div class="services service-extend-it">
+            <img class="service-image service-image-it" src="IT.svg" alt="IT">
+            <h3 class="services-h3">IT Management</h3>
+            <p class="service-extend-p">Project Strategy, Talent Management, Vendor Management </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+  <section id="Why-Us">
+    <h2 class="why-us-header">Why Us</h2>
+
+
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="why-us-life-cycle left-cycle" src="Group 30.svg" alt="">
+        <h3 class="why-us-h3">Full life cycle development</h3>
+        <p class="why-us-p left-align-p">No matter your software needs, we
+          can work with you and guide you
+          through the entire process, from
+          concept to sustainment
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <img class="why-us-life-cycle right-align" src="team.svg" alt="">
+        <h3 class="why-us-h3">Part of the team</h3>
+        <p class="why-us-p team-p">From complete IT outsourcing to small team augmentation, we can fill the needs of your environment</p>
+      </div>
+    </div>
+
+
+
+    <div class="row why-us-second-row">
+      <div class="col-lg-6">
+        <img class="why-us-life-cycle left-cycle" src="compass.svg" alt="">
+        <h3 class="why-us-h3">Experienced professionals</h3>
+        <p class="why-us-p left-align-p">Our team members have the experience to navigate complex problems </p>
+      </div>
+      <div class="col-lg-6">
+        <img class="why-us-life-cycle right-align" src="handshake.svg" alt="">
+        <h3 class="why-us-h3">Partnership</h3>
+        <p class="why-us-p">Our aim is to become a complement to your business</p>
+      </div>
+    </div>
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <!-- About -->
+
+  <section id="About">
+    <h2 class="about-us-header">About Us</h2>
+    <div class="row">
+      <div class="col-lg-6 about-col">
+        <h3 class="about-h3">Young at heart, <em>wise in years</em></h3>
+        <p class="about-1p">Anvil has been around since 2006 and we've experienced a steady growth in customers and team members in that time. We started building web applications for small businesses
+          and we still service those same customers.
+        </p>
+        <p class="about-1p">Over the years we have focused heavily on building Line of Business software applications while still meeting the general needs of our customers. We have been able to help with conversions, upgrades
+          and software additions to legacy projects. We pride ourselves in being able to find solutions for almost any situation.</p>
+      </div>
+
+      <div class="col-lg-6 about-col">
+        <h3 class="about-h3">Core Competencies</h3>
+        <p class="about-1p">From a high level perspective, Anvil aims to be technology agnostic and provide the right solution stack for any situation. We help with software, hardware and networking solutions.
+
+        </p>
+        <p class="about-1p"> From a specialty perspective, Anvil has a long history with providing Microsoft™ centered solutions. We are very comfortable with C# and Visual Basic and we work very well within the Microsoft™ Windows environment.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+
+  <section id="contact">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="contact-header">Contact Us!</h2>
+        <h3 class="contact-h3">We'd love to hear from you!</h3>
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+        </form>
+        </form>
+
+      </div>
+
+      <div class="col-lg-6 contact-right-side">
+        <h3 class="contact-h3">We're Hiring!</h3>
+        <p class="contact-p">We're always looking to grow our team with dedicated and talented people. If you're interested in working with us, please send us your resume! Send it to <b>jobs@anvil.com</b></p>
+
+        <h3 class="contact-h3">Information</h3>
+
+        <p><img class="contact-icon" src="location.svg" alt=""> 7734 Madison Blvd Suite 16
+          Huntsville, AL 35806
+        </p>
+        <p> <img class="contact-icon"src="phone.svg" alt="">256.429.2504
+        </p>
+        <p><img class="contact-icon mail"src="mail.svg" alt=""> info@anvildev.com</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>
+
+
+************************************************************************LAST FINAL DRAFT HTML****************************************************************************
+
+
+
+
+
+************************************************************************LAST FINAL DRAFT CSS****************************************************************************
+
+
+/* Colors */
+/* blue - #00A295 */
+/* grey - #616161 */
+
+h2{
+  font-family: Montserrat;
+  font-weight: 900;
+}
+
+h3{
+  font-family: Montserrat;
+  font-size: 1.5rem;
+}
+
+.container-fluid{
+  padding: 0 15%;
+}
+
+
+.navbar{
+  font-family: Montserrat;
+  padding: 0;
+  padding-bottom: 5%;
+  padding-top: 2%;
+
+}
+
+.header-container{
+  padding: 0;
+  padding: 20px;
+
+}
+
+.carousel-inner{
+  text-align: center;
+}
+
+.nav-item{
+  line-height: 1.5rem;
+  font-family: Montserrat;
+}
+
+.title-text{
+  color: #616161;
+  text-align: left;
+  padding-bottom: 2%;
+}
+
+
+/* services */
+#our-services{
+  background-color: #00A295;
+  padding: 2% 1% 15%;
+  color: #fff;
+  padding-bottom: 3%;
+
+
+}
+
+.service-h2{
+  padding-bottom: 1%;
+}
+
+.services-h3{
+  font-weight: bold;
+}
+.services-h3:hover{
+  color: #616161
+}
+
+.service-p{
+  padding-bottom: 2%;
+}
+.services{
+  text-align: center;
+  border: 2px solid #fff;
+  padding: 20px;
+}
+
+/* .service-extend{
+  padding-bottom: 14%;
+}
+.service-extend-it{
+  padding-bottom: 16%;
+} */
+
+.service-image{
+  padding-bottom: 10%;
+  width: 30%;
+}
+
+.service-image-it{
+  padding-bottom: 12%;
+}
+
+.service-image-p{
+  padding-bottom: 10%;
+}
+
+.service-image-consulting{
+  padding-top: 1%;
+  padding-bottom: 15%;
+}
+
+.service-extend-p{
+  padding-top: 10%;
+}
+
+/* Why Us */
+#Why-Us{
+  padding: 2% 15% 7%;
+}
+.why-us-header{
+  padding-bottom: 5%;
+  color: #616161;
+}
+
+.why-us-life-cycle{
+  float: left;
+  padding-right: 3%;
+  margin-right: 20px;
+  width:20%;
+  margin-bottom: 10%;
+}
+
+.left-cycle{
+   width: 15%;
+}
+
+.why-us-h3{
+  font-weight: bold;
+  color: #616161;
+
+}
+
+.why-us-h3:hover{
+  color: #00A295;
+}
+
+.why-us-p{
+  padding-top: 3%;
+}
+
+.why-us-second-row{
+  padding-top: 5%;
+}
+
+/* .team-p{
+  margin-left: 28%;
+} */
+
+@media (max-width: 1028px){
+  .right-align{
+    float: right;
+  }
+  .why-us-p{
+    margin: 0;
+    padding-bottom: 5%;
+  }
+  .why-us-life-cycle{
+    padding-top: 0;
+  }
+  .left-align-p{
+    margin-left: 20%;
+  }
+
+  }
+
+
+
+/* About Us */
+#About{
+  padding: 2% 15% 7%;
+  background-color: #00A295;
+  color: #fff;
+}
+
+.about-us-header{
+  padding-bottom: 5%;
+}
+
+.about-h3{
+  padding-bottom: 3%;
+  font-weight: bold;
+}
+
+.about-1p{
+  margin-right: 4%;
+}
+
+
+/* Contact */
+#contact{
+  padding: 2% 15% 7%;
+}
+
+.submit-btn{
+  background-color: #00A295;
+  border: none;
+  float: right;
+  margin-top: 2%;
+}
+
+.contact-header{
+  padding-bottom: 3%;
+}
+.contact-h3{
+  padding-bottom: 2%;
+}
+
+.contact-right-side{
+  padding-left: 10%;
+}
+
+.contact-h3{
+  font-weight: bold;
+}
+
+.contact-icon{
+  padding-right: 5%;
+}
+.mail{
+  padding-right: 3%;
+}
+
+.contact-p{
+  padding-bottom: 30%;
+}
+
+
+
+************************************************************************LAST FINAL DRAFT CSS****************************************************************************
